@@ -1,0 +1,4 @@
+test
+*.out
+a.out
+*.exe
