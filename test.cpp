@@ -1,6 +1,7 @@
 #include <iostream>
-
+using namespace std;
 int main() {
-    std::cout << "Nico MPeezy is a hare" << std::endl;
+    int x;
+    std::cout << "Hello, World!" << std::endl;
     return 0;
 }
