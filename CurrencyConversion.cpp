@@ -1,9 +1,8 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
-string DtoE(double);
-string DtoY(double);
+double DtoE(double);
+double DtoY(double);
 
 
 int main ()
@@ -11,18 +10,16 @@ int main ()
     double USD;
     cout <<  "Enter the amount of dollars ==>" ;
     cin >> USD;
-    cout << DtoE(USD) << endl;
-    cout << DtoY(USD) << endl;
+    cout << "It is " << DtoE(USD) << " Euro" << endl;
+    cout << "It is " << DtoY(USD) << " Yen" << endl;
 }
 
-string DtoE(double d)
-{
-    double convert = d * 0.87;
-    return "it is " + to_string(convert) + " Euros\n";
+double DtoE(double d)
+{ 
+    return d * 0.87;
 }
 
-string DtoY(double d)
+double DtoY(double d)
 {
-    double convert = d * 160.43;
-    return "it is " + to_string(convert) + " Yen\n";
+    return d * 160.43;
 }
