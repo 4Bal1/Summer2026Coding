@@ -32,7 +32,6 @@ void BankAccount::Withdraw(double withdraw){
         cout << "You have withdrawn $" << withdraw << endl;
     }
     
-    cout << "New account balance: $" << this->Balance << endl;
 }
 
 void BankAccount::Deposit(double deposit){
@@ -49,7 +48,6 @@ void BankAccount::Deposit(double deposit){
         cout << "You have deposited $" << deposit << endl;
     }
 
-    cout << "New account balance: $" << this->Balance << endl;
 }
 
 void BankAccount::SetBalance(double balance){
